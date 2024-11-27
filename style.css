@@ -1,0 +1,65 @@
+body{
+    background-color: #F7ECDE;
+}
+.head .h2-text h1{
+    padding: 50px 0;
+    border-bottom: dotted;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 31px;
+  position: relative;
+}
+
+.head .h2-text h1::after{
+    content: '';
+    width: 300px;
+    height: 25px;
+    background-color: #FEC260;
+    position: absolute;
+    left: 38%;
+    top: 52%;
+    z-index: -1;
+     transition: all 0.4s;
+     
+}
+
+.head .h2-text h1:hover::after  {
+top: 45%;
+height: 40px;
+
+}
+
+.f-sec h2{
+    padding: 50px 0;   
+background-image: linear-gradient(to right, rgba(62,165,92,1) 48%, rgba(177,172,73,1) 50%);
+/* background-image: linear-gradient(to right, #3ca55c, #b5ac49); */
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.f-sec button{
+    padding: 10px 30px;
+    border-radius: 7%;
+    margin: 1% 35%;
+}
+.f-sec button:hover{
+    background-color: red !important;
+
+}
+.f-sec{
+    padding: 10px 0;
+    border-bottom: dotted;
+}
+
+.tr-table th{
+    padding: 20px 0;
+}
+
+td .btn i{
+    margin-right: 8px;
+}
+
+.highlight::selection{
+    background-color: #FEC260;
+    color: black;
+}

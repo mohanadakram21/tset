@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>bookmarkt</title>
+</head>
+<body>
+    <div class="head ">
+        <div class="container">
+            <div class="row">
+                <div class="h2-text text-center">
+                    <h1 class="text-center fw-bolder col-sm-12">BOOKMARKER</h1>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="f-sec container">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> <span class="highlight">Bookmark yourfavorite sites </span>  <i class="fa-solid fa-bookmark"></i> </h2>
+<form >
+    <div class="mb-3">
+        <label for="sitename" class="form-label fw-bolder"><i class="fa-solid fa-book"></i> site name</label>
+        <input type="name" class="form-control" id="sitename" aria-describedby="name" placeholder="bookmarkt name" oninput="validitionname(/^[A-Za-z].*/,this.value,alert,this)">
+        <p class="p-1 d-none bg-danger" id="alert">must be start with word</p>
+    </div>
+    <div class="mb-3">
+        <label for="siteurl" class="form-label fw-bolder"><i class="fa-solid fa-link"></i> site url</label>
+        <input type="name" class="form-control" id="siteurl" aria-describedby="name" placeholder="website url" oninput="validitionurl(/^(http|https):\/\/.*/,this.value,namealert,this)">
+        <p class="p-1 d-none bg-danger" id="namealert">must be start with https or http</p>
+    </div>
+    <button type="button" class="px-5 text-center bg-danger"  id="Submit" onclick="addsite()">Submit</button>
+
+    
+</form>
+</div>        
+    </div>
+</div>
+    <div class="sec-sec ">
+        <div class="container">
+            <div class="row">
+                <table class=" text-center p-3  bg-light" id="table">
+                    <thead style="border-bottom: solid;">
+                        <tr class="tr-table">
+                            <th>index</th>
+                            <th>website name</th>
+                            <th>visit</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="wraap"class="bg-light p-3">
+                <hr>
+                    </tbody>
+                    
+                  </table>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
